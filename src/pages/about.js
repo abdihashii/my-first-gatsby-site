@@ -1,10 +1,10 @@
 import * as React from 'react';
 import Layout from '../components/layout';
+import Seo from '../components/seo';
 
 const AboutPage = () => {
   return (
-    <Layout pageTitle='About Me'>
-      <h1>About Me</h1>
+    <Layout pageTitle="About Me">
       <p>
         Hi there! I'm the proud developer of this site, which I built with
         Gatsby
@@ -13,10 +13,6 @@ const AboutPage = () => {
   );
 };
 
-export const Head = () => (
-  <>
-    <title>About Me</title>
-  </>
-);
+export const Head = () => <Seo pageTitle="About Me" />;
 
 export default AboutPage;
